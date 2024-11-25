@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<PeerStaticData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DownLoadPath>C:\Documents and Settings\XP\デスクトップ\Ossom2\Ossom\bin\Debug\Download</DownLoadPath>
+  <UploadPath>C:\Documents and Settings\XP\デスクトップ\Ossom2\Ossom\bin\Debug\Upload</UploadPath>
+  <CachePath>C:\Documents and Settings\XP\デスクトップ\Ossom2\Ossom\bin\Debug\Cache</CachePath>
+  <DataPath>C:\Documents and Settings\XP\デスクトップ\Ossom2\Ossom\bin\Debug\Data</DataPath>
+  <Port>12346</Port>
+  <Speed>1200</Speed>
+  <WPPSSendPort>30001</WPPSSendPort>
+  <LocalEndPoint>
+    <Address>192.168.5.10</Address>
+    <Port>20000</Port>
+  </LocalEndPoint>
+  <BrossomServerEndPoint>
+    <Address>192.168.5.10</Address>
+    <Port>12345</Port>
+  </BrossomServerEndPoint>
+  <WebServerEndPoint>
+    <Address>192.168.5.10</Address>
+    <Port>20000</Port>
+  </WebServerEndPoint>
+</PeerStaticData>

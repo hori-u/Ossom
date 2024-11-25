@@ -1,0 +1,8 @@
+/mnt/d/ossom/obj/Release/net8.0/Ossom.csproj.AssemblyReference.cache
+/mnt/d/ossom/obj/Release/net8.0/Ossom.BrossomForm.resources
+/mnt/d/ossom/obj/Release/net8.0/Ossom.Properties.Resources.resources
+/mnt/d/ossom/obj/Release/net8.0/Ossom.csproj.GenerateResource.cache
+/mnt/d/ossom/obj/Release/net8.0/Ossom.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/d/ossom/obj/Release/net8.0/Ossom.AssemblyInfoInputs.cache
+/mnt/d/ossom/obj/Release/net8.0/Ossom.AssemblyInfo.cs
+/mnt/d/ossom/obj/Release/net8.0/Ossom.csproj.CoreCompileInputs.cache

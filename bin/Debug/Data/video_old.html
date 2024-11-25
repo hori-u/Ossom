@@ -1,0 +1,38 @@
+<html>
+<head>
+<style type="text/css">
+	body { background-color: #fff; padding: 0 50px; color:#000; font: 13px/18px Arial, sans-serif; }
+	a { color: #069; }
+	h3 { padding-top: 50px; }
+	ol { margin:5px 0 15px 16px; padding:0; list-style-type:square; }
+</style>
+</head>
+
+<body>
+
+
+<h2><img src="brossom_logo_vsmall.png"/>Brossom</h2>
+<p>P2Pモード</p>
+
+
+<div id="container"><a href="http://www.macromedia.com/go/getflashplayer">Get the Flash Player</a> to see this player.</div>
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript">
+	var s1 = new SWFObject("mediaplayer.swf","mediaplayer","640","480","7");
+	s1.addParam("allowfullscreen","true");
+	s1.addVariable("width","640");
+	s1.addVariable("height","480");
+	s1.addParam("bgcolor","#000000");
+	s1.addParam("overstretch","#000000"); 
+	s1.addVariable("file",<!--0-->);
+	s1.addVariable("linkfromdisplay",'true');
+	s1.addVariable("repeat","list");
+	s1.addVariable("displaywidth",'640');
+	s1.addVariable("shuffle","false");
+	s1.addVariable("autostart","true"); 
+	s1.write("container");
+</script>
+
+
+</body>
+</html>

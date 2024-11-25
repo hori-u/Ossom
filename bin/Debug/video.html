@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>MoviePlayer</title>
+		
+		<script type="text/javascript"><!--
+		function loadTextFile(){
+			httpObj = new XMLHttpRequest();
+			httpObj.open("GET","request.txt?FILE=?--filename--?",true);
+			httpObj.send(null);
+		}
+		
+		// --></script>
+	</head>
+	<body bgcolor="#ffffff">
+		<form name="ajaxForm">
+			<object data="mini_player.swf" width="620" height="351" type="application/x-shockwave-flash">
+			<param name="allowFullScreen" value="true" />
+			<param name="movie" value="mini_player.swf" />
+			<param name=FlashVars value="bufTime=10&movie_path=http://localhost:20000/?--filename--?.flv" />
+			</object>
+			<br>
+			<input type="button" value="読み込み" onClick="loadTextFile()">
+			<br>	
+		</form>
+	</body>
+</html>
