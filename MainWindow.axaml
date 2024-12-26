@@ -1,0 +1,10 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Ossom.MainWindow"
+        Title="Avalonia Integration"
+        Width="800" Height="600">
+    <StackPanel>
+        <TextBlock Text="Hello, Avalonia!" HorizontalAlignment="Center" />
+        <Button Content="Click Me" HorizontalAlignment="Center" />
+    </StackPanel>
+</Window>

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Text;
+using Avalonia;
+using Avalonia.Controls;
 
 namespace P2P
 {
@@ -112,7 +114,16 @@ namespace P2P
 						System.IO.File.WriteAllText("segmentNumber.txt", s, Encoding.UTF8);
 
 
-						System.Windows.Forms.MessageBox.Show("マルチキャスト完了");
+						//System.Windows.Forms.MessageBox.Show("マルチキャスト完了");
+						//new Window().ShowDialog(new TextBlock { Text = "マルチキャスト完了" }); //2024-12-19
+						var window = new Window	//2024-12-25	Avalonia.Controls.Window.ShowDialog メソッドは Window 型の引数を受け取る必要がある
+						{
+    						Content = new TextBlock { Text = "マルチキャスト完了", Margin = new Thickness(20) },
+    						Width = 300,
+    						Height = 150
+						};
+						window.ShowDialog(null);
+						////////////////////////////////////////////////
 						break;
 					}
 
@@ -139,7 +150,16 @@ namespace P2P
 						system.AddContent(new KeyValuePair<P2P.BBase.ContentInfoBase, P2P.BBase.Node>(fdi, system.MyNodeInfo));
 						action.RegMyContent();
 
-						System.Windows.Forms.MessageBox.Show("受信完了");
+						//System.Windows.Forms.MessageBox.Show("受信完了");
+						//new Window().ShowDialog(new TextBlock { Text = "受信完了" });
+						var window = new Window	//2024-12-25
+						{
+    						Content = new TextBlock { Text = "受信完了", Margin = new Thickness(20) },
+    						Width = 300,
+    						Height = 150
+						};
+						window.ShowDialog(null);
+
 						break;
 					}
 				}

@@ -1,19 +1,30 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>Ossom</RootNamespace>
     <AssemblyName>Ossom</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>false</UseWPF> 
+    <UseWindowsForms>false</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.2.3" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.2.3" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="11.2.3" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.2.3" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.1" />
     <PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
-    <PackageReference Include="System.Windows.Forms" Version="4.0.0" />
+    <!--<PackageReference Include="System.Windows.Forms" Version="4.0.0" />-->
     <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <!--<Compile Include="BBase.cs" />
     <Compile Include="BFileSystem.cs" />
     <Compile Include="BroadCast.cs" />-->

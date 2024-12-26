@@ -1,17 +1,20 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using Avalonia;
+using Avalonia.Controls.ApplicationLifetimes;
 
 namespace Ossom
 {
-    static class Program {
-		/// <summary>
-		/// アプリケーションのメイン エントリ ポイントです。
-		/// </summary>
-		[STAThread]
-		static void Main() {
-			Application.EnableVisualStyles();
-			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new BrossomForm());
-		}
-	}
+    internal class Program
+    {
+        // エントリポイント
+        public static void Main(string[] args)
+        {
+            BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);
+        }
+
+        // Avaloniaアプリケーションの設定
+        public static AppBuilder BuildAvaloniaApp()
+            => AppBuilder.Configure<App>()
+                         .UsePlatformDetect()
+                         .LogToTrace();
+    }
 }

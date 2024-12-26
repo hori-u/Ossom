@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/d/ossom/Ossom.csproj": {}
+    "/mnt/d/Ossom/Ossom.csproj": {}
   },
   "projects": {
-    "/mnt/d/ossom/Ossom.csproj": {
+    "/mnt/d/Ossom/Ossom.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/d/ossom/Ossom.csproj",
+        "projectUniqueName": "/mnt/d/Ossom/Ossom.csproj",
         "projectName": "Ossom",
-        "projectPath": "/mnt/d/ossom/Ossom.csproj",
+        "projectPath": "/mnt/d/Ossom/Ossom.csproj",
         "packagesPath": "/home/oz/.nuget/packages/",
-        "outputPath": "/mnt/d/ossom/obj/",
+        "outputPath": "/mnt/d/Ossom/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/oz/.nuget/NuGet/NuGet.Config"
@@ -43,6 +43,22 @@
         "net8.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[11.2.3, )"
+            },
+            "Avalonia.Desktop": {
+              "target": "Package",
+              "version": "[11.2.3, )"
+            },
+            "Avalonia.Diagnostics": {
+              "target": "Package",
+              "version": "[11.2.3, )"
+            },
+            "Avalonia.Themes.Fluent": {
+              "target": "Package",
+              "version": "[11.2.3, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[8.0.1, )"
